@@ -13,11 +13,13 @@ import Instructor from "../pages/instructor";
 import MasterLayout from "../pages/layouts/MasterLayout";
 import Learner from "../pages/learner";
 import GenerateKey from "../pages/institution/GenerateKey";
+import { LandingPage } from "../pages/landingPage";
 
 const AllRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/landingPage" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<MasterLayout />}>
